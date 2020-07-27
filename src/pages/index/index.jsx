@@ -1,24 +1,15 @@
-import React, { Component } from 'react'
-import { View, Text } from '@tarojs/components'
-import './index.scss'
+import React, { useState } from "react";
+import { View, Text } from "@tarojs/components";
+import "./index.scss";
 
-export default class Index extends Component {
+function Index() {
+  const [userName, setUserName] = useState("Hello World!!!!");
 
-  componentWillMount () { }
-
-  componentDidMount () { }
-
-  componentWillUnmount () { }
-
-  componentDidShow () { }
-
-  componentDidHide () { }
-
-  render () {
-    return (
-      <View className='index'>
-        <Text>Hello world!</Text>
-      </View>
-    )
-  }
+  return (
+    <View>
+      <Text>{userName}</Text>
+    </View>
+  );
 }
+
+export default Index;
