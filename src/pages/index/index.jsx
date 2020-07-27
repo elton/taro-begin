@@ -6,7 +6,7 @@ import "./index.scss";
 import Child from "./components/child.jsx";
 
 function Index() {
-  const [userName, setUserName] = useState("Hello World!!!!");
+  const [userName, setUserName] = useState("Hello World!!!! H5 & weapp");
   const [blogTitle, setBlogTitle] = useState("");
 
   useEffect(() => {
