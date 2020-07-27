@@ -1,10 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import Taro from "@tarojs/taro";
 import { View, Text, Button } from "@tarojs/components";
 
 function Blog() {
+  const [blogTitle, setBlogTitle] = useState("elton zheng");
+
   const gotoIndex = () => {
-    Taro.navigateTo({ url: "/pages/index/index" });
+    Taro.navigateTo({ url: "/pages/index/index?blogTitle=" + blogTitle });
   };
 
   return (
